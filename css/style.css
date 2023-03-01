@@ -1,6 +1,7 @@
 :root{
     ---btn-color:#FF753A;
     ---heading-color:#505050;
+    ---divider-color:#AB0433;
 }
 
 @font-face {
@@ -225,10 +226,103 @@ color 0.4s ease;
 
 
 
+.hero__widget {
+    display: flex;
+    flex-direction: column;
+  padding-bottom: 88px;
+}
+.box {
+
+}
+.divider {
+    height: 3px;
+    background-color:var(---divider-color);
+width: 80px;
+     transform: translate(50%);
+     position: relative;
+     left: calc(50% - 80px);
+     margin-bottom: 8px;
+}
+.box__heading {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.2;
+color:var(---heading-color);
+text-align: center;
+margin-bottom: 15px;
+}
+.features {
+}
+.features__list {
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 32px;
+}
+.feature__item {
+    display: flex;
+    flex-direction: column;
+ border-radius: 10px;
+ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+ overflow: hidden;
+
+}
+
+.feature__img{
+    background-color:rgb(119, 119, 119,0.3);
+}
+
+.feature__wrapper{
+    display: flex;
+    flex-direction: column;
+ padding: 16px 24px 24px;
+}
+.features__properties {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+.features__properties-info {
+    color:#252525;
+    font-weight: 600;
+}
 
 
+.features__properties-custom {
+}
+.features__info {
+ margin-bottom: 10px;
+ transition: color 0.4s ease;
+}
 
+.features__info:hover{
+    cursor: pointer;
+    color: lightskyblue;
+}
+.features__available {
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+    border:1px solid #777;
+    border-radius: 15px;
+    width: 150px;
+}
 
+strong{
+    margin-right: 10px;
+}
+
+.products{
+    background-color:rgb(136, 136, 136,0.2);
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+
+.product-img{
+    background-color: #fff;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -239,4 +333,10 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
   /* Retina-specific stuff here */
+  .header{
+    background-image:url(../img/header-bg@2x.jpg);
+  }
+  .box-advertising{
+    background-image:url(../img/Mobile@2x.png);
+  }
 }
