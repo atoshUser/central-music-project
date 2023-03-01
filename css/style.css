@@ -50,8 +50,6 @@ display: flex;
 flex-direction: column;
 width: 100%;
 height: 100vh;
-padding: 0;
-margin: 0;
 font-family: 'Work Sans','Arial',sans-serif;
 font-weight: normal;
 background-color: white;
@@ -155,14 +153,75 @@ line-height: 1.3;
      cursor: pointer;
 }
 
+.header__heading{
+    display: inline-block;
+    color:#fff;
+    transform: translateY(50%);
+    margin: 0;
+    line-height: 1.2;
+    font-size: 56px;
+    letter-spacing: 2px;
+}
+
+/* HERO SECTION STYLES  */
 
 
 
 
+.hero {
+}
+.hero__wrapper {
 
+}
+.container {
+}
+.box-advertising {
+    position: relative;
+     transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 50px 324px;
+    background-image:url(../img/Mobile.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+     overflow: hidden;
+     border-radius: 10px;
+     border:1px solid transparent;
+     color: #fff;
+}
+.box-advertising__heading {
 
+    text-transform: uppercase;
+ font-size: 46px;
+ line-height: 1.2;
 
+}
+.box-advertising__text {
+text-align: center;
+font-size: 24px;
+line-height: 1.5;
+margin-bottom: 16px;
+}
+.btn {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   text-transform: uppercase;
+   border-radius:18px;
+    background-color: var(---btn-color);
+    text-decoration: none;
+    color:#fff;
+padding: 8px 16px;
+transition: background-color 0.4s ease,
+color 0.4s ease;
+}
 
+.btn:hover{
+    background-color: #fff;
+    color:var(---btn-color);
+}
 
 
 
